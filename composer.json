@@ -15,5 +15,7 @@
       {
         "name": "Ash Whiting <ash_whiting@hotmail.com>"
       }
-    ]
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": false
   }
