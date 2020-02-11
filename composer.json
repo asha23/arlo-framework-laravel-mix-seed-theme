@@ -2,7 +2,7 @@
 {
     "name": "asha23/arlo-framework-laravel-mix-seed-theme",
     "license": "MIT",
-    "description": "Addon to display 360 photos in a Forge viewer.",
+    "description": "Wordpress Base Theme.",
     "type": "library",
     "keywords": [
       "wordpress",
@@ -15,20 +15,5 @@
       {
         "name": "Ash Whiting <ash_whiting@hotmail.com>"
       }
-    ],
-    "require": {
-      "php": "^7.2",
-      "ext-curl": "*"
-    },
-    "require-dev": {
-      "phpunit/phpunit": "^8"
-    },
-    "autoload": {
-      "psr-4": {
-        "dt_forge_360\\": "includes/"
-      },
-      "files": [
-        "functions.php"
-      ]
-    }
+    ]
   }
