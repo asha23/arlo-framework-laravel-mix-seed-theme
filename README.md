@@ -5,7 +5,7 @@
 - Install [Node](https://nodejs.org/)
 - Install all [packages](./package.json) with `npm install`
 
-- ```composer install``
+- ```composer install```
 
 ## Usage
 
