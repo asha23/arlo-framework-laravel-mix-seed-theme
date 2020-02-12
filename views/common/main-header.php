@@ -22,7 +22,7 @@
 			<?php // Collect the nav links, forms, and other content for toggling ?>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<?php seed_main_nav(); ?>
+				<?php //seed_main_nav(); ?>
 			</div>
 
 		</nav>
