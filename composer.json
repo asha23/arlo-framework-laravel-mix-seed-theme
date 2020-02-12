@@ -1,14 +1,10 @@
-
 {
     "name": "asha23/arlo-framework-laravel-mix-seed-theme",
     "license": "MIT",
     "description": "Wordpress Base Theme.",
     "type": "library",
     "keywords": [
-      "wordpress",
-      "autodesk",
-      "forge",
-      "plugin"
+      "wordpress"
     ],
     "homepage": "http://ashwhiting.comk",
     "authors": [
@@ -17,15 +13,14 @@
       }
     ],
     "require": {
-      "timber/timber": "^1.8",
-      "erusev/parsedown": "^1.7"
+      "erusev/parsedown": "^1.7",
     },
     "require-dev": {
       "squizlabs/php_codesniffer": "^3.4"
     },
     "autoload": {
       "psr-4": {
-        "arlo_seed\\": "includes/"
+        "arlo_seed\\": "inc/"
       }
     }
   }

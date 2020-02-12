@@ -1,6 +1,4 @@
-// Bootstrap
 
-@import 'bootstrap/bootstrap';
 
 // Fontawesome
 
@@ -10,7 +8,9 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 // Theme specific
+// Flexbox Grid
 
+@import 'grid/main';
 @import 'core/global'
 
 

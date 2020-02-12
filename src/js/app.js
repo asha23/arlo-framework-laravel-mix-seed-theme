@@ -1,7 +1,6 @@
 
 
 require('jquery');
-require('bootstrap');
 
 
 
