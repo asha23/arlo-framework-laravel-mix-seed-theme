@@ -5,7 +5,7 @@ namespace arlo_seed\utils;
 final class acf_plugin_bundle
 {
 
-    public function listen()
+    public function init()
     {
         $this->check_acf();
     }
@@ -13,13 +13,13 @@ final class acf_plugin_bundle
     public function check_acf()
     {
         if (!class_exists('acf')) {
-            $this->init();
+            $this->insert_plugin();
         } else {
             return;
         }
     }
 
-    public function init()
+    public function insert_plugin()
     {
         add_filter('acf/settings/url', [$this, 'acf_settings_url']);
         add_filter('acf/settings/show_admin', [$this, 'acf_settings_show_admin']);

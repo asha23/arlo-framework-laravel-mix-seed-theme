@@ -8,10 +8,14 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 // Theme specific
-// Flexbox Grid
 
-@import 'grid/main';
-@import 'core/global'
+@import 'core/utils/mixins';
+@import 'core/utils/helpers';
+@import 'core/utils/reset';
+@import 'core/utils/variables';
+@import 'core/grid/main';
+@import 'core/typography/style.scss';
+@import 'core/global';
 
-
-
+// Views
+@import 'views/common/footer';

@@ -4,7 +4,7 @@ namespace arlo_seed\cpt;
 
 class custom_post_types 
 {
-    public function listen()
+    public function init()
     {
         add_action('init', [$this, 'register_post_types']);
     }

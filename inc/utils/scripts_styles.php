@@ -5,7 +5,7 @@ namespace arlo_seed\utils;
 class scripts_styles 
 {
 
-	public function listen()
+	public function init()
 	{
 		add_action( 'wp_enqueue_scripts', [$this, 'enqueue_scripts_styles'], 0);
 	}
@@ -21,10 +21,11 @@ class scripts_styles
 		if (!is_admin()) {
 
 			$this->rand = $this->rand_num();
+			$path = get_stylesheet_directory_uri();
 	
 			wp_register_script( 
 				"manifest-scripts", 
-				'dist/js/manifest.js', 
+				$path . '/dist/js/manifest.js', 
 				[], 
 				$this->rand, 
 				true
@@ -32,7 +33,7 @@ class scripts_styles
 	
 			wp_register_script( 
 				"vendor-scripts", 
-				'dist/js/vendor.js', 
+				$path . '/dist/js/vendor.js', 
 				['manifest-scripts'], 
 				$this->rand, 
 				true
@@ -40,7 +41,7 @@ class scripts_styles
 	
 			wp_register_script( 
 				"app-scripts", 
-				'dist/js/app.js', 
+				$path . '/dist/js/app.js', 
 				['vendor-scripts'], 
 				$this->rand, 
 				true
@@ -52,7 +53,7 @@ class scripts_styles
 	
 			wp_register_style(
 				'arlo-style', 
-				'dist/css/app.css', 
+				$path . '/dist/css/app.css', 
 				[], 
 				$this->rand, 
 				'all'

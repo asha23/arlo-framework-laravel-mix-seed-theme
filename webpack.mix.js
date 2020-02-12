@@ -16,6 +16,9 @@ mix.js(paths.js_src, paths.js_dest)
     })
     .copy(paths.fontaweome_src, paths.fontawesome_dest)
     .sass(paths.scss_src, paths.css_dest)
+    .webpackConfig({
+        devtool: 'source-map'
+    })
     .then(() => {
         console.log('webpack has finished building your styles!');
     })
