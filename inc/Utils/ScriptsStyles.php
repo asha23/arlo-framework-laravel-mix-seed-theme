@@ -1,8 +1,8 @@
 <?php
 
-namespace arlo_seed\utils;
+namespace ArloSeed\Utils;
 
-class scripts_styles 
+class ScriptsStyles 
 {
 
 	public function init()

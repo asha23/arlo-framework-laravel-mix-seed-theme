@@ -1,8 +1,8 @@
 <?php
 
-namespace arlo_seed\utils;
+namespace ArloSeed\utils;
 
-class yoast_to_bottom 
+class YoastToBottom 
 {
     public function init()
     {

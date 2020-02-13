@@ -1,8 +1,8 @@
 <?php
 
-namespace arlo_seed\cpt;
+namespace ArloSeed\Cpt;
 
-class custom_post_types 
+class CustomPostTypes 
 {
     public function init()
     {

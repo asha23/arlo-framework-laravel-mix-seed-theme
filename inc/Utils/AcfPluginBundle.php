@@ -1,8 +1,8 @@
 <?php
 
-namespace arlo_seed\utils;
+namespace ArloSeed\Utils;
 
-final class acf_plugin_bundle
+class AcfPluginBundle
 {
 
     public function init()
