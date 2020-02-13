@@ -5,7 +5,7 @@ use arlo_seed\utils\acf_plugin_bundle;
 use arlo_seed\utils\scripts_styles;
 use arlo_seed\utils\yoast_to_bottom;
 use arlo_seed\cpt\custom_post_types;
-use arlo_seed\acf\register_page_fields;
+use arlo_seed\acf\page_components;
 
 class init 
 {
@@ -23,7 +23,11 @@ class init
         $cpt = new custom_post_types();
         $cpt->init();
 
-        $register_page_fields = new register_page_fields();
-        $register_page_fields->init();
+    }
+
+    public static function init_components()
+    {
+        $page_components = new page_components();
+        $page_components->init();
     }
 }

@@ -8,5 +8,8 @@ if (!defined('WP_ENV')) {
     define('WP_ENV', 'production');
 }
 
-$init = new init();
-$init->init_theme();
+$init_theme = new init();
+$init_theme->init_theme();
+
+$init_components = new init();
+$init_components->init_components();
