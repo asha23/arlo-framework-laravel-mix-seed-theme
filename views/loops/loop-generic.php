@@ -6,10 +6,10 @@ $content = Acf::field('content')->get();
 
 ?>
 
-<section class="row">
+<main class="row">
 	<div class="col">
 		<?= $content; ?>
 	</div>
-</section>
+</main>
 
 
