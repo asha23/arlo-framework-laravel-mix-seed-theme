@@ -15,7 +15,7 @@
 
 ### Notes
 
-This theme uses ACF / WordPlate and ACF Fluent. Please see ```inc/acf/page_components``` for an example of how this is done.
+This theme uses ACF / WordPlate and ACF Fluent. Please see ```inc/acf/page_components.php``` for an example of how this is done.
 
 https://github.com/wordplate/acf
 
