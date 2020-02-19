@@ -2,7 +2,7 @@
 
 namespace ArloSeed\Utils;
 
-class ScriptsStyles 
+final class ScriptsStyles 
 {
 
 	public function init()
@@ -10,7 +10,7 @@ class ScriptsStyles
 		add_action( 'wp_enqueue_scripts', [$this, 'enqueue_scripts_styles'], 0);
 	}
 
-	public function rand_num() 
+	public static function rand_num() 
 	{
 		$randomizr = rand(100,1000000);
 		return $randomizr;
@@ -20,7 +20,7 @@ class ScriptsStyles
 	{
 		if (!is_admin()) {
 
-			$this->rand = $this->rand_num();
+			$this->rand = self::rand_num();
 			$path = get_stylesheet_directory_uri();
 	
 			wp_register_script( 

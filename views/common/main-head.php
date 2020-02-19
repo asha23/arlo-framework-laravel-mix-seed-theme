@@ -5,12 +5,6 @@
 
 	<title><?php wp_title(''); ?></title>
 
-	<script type="text/javascript">
-		var domain = '<?php bloginfo('template_url'); ?>';
-		var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
-		var templateurl = '<?php echo get_bloginfo('template_url'); ?>';
-	</script>
-
 	<?php // mobile meta ?>
 
 	<meta name="HandheldFriendly" content="True">
